@@ -81,7 +81,6 @@ A full session with godot-superpowers looks like this:
 | `dispatching-parallel-agents` | For independent tasks that can run concurrently |
 | `verification-before-completion` | Before claiming work is done — requires evidence |
 | `using-git-worktrees` | For feature isolation |
-| `writing-plans` | When you have a spec and need a task-by-task plan |
 
 ## Updates
 
