@@ -43,8 +43,8 @@ Every scene must be independently instancable with no assumptions about its pare
 
 Prefer a scene made of specialized child nodes over a single script doing everything.
 
-| Signal | Decompose when... |
-|--------|-------------------|
+| Condition | Decompose when... |
+|-----------|-------------------|
 | A script handles input, movement, AND health | Split into focused child scenes |
 | A subtree has its own internal state | Make it its own scene |
 | A subtree could be reused elsewhere | It should already be its own scene |
