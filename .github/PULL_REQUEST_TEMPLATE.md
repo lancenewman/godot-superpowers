@@ -4,56 +4,52 @@ sections blank, contain multiple unrelated changes, or show no evidence
 of human involvement will be closed without review.
 -->
 
-## What problem are you trying to solve?
-<!-- Describe the specific problem you encountered. If this was a session
-     issue, include: what you were doing, what went wrong, the model's
-     exact failure mode, and ideally a transcript or session log.
+## What problem are you solving?
+<!-- Describe the specific problem you encountered as a Godot developer
+     using godot-superpowers. What were you doing, what went wrong or
+     was missing? If this was a session issue, include what the AI did
+     wrong and ideally a transcript.
 
      "Improving" something is not a problem statement. What broke? What
-     failed? What was the user experience that motivated this? -->
+     failed? What was the Godot workflow experience that motivated this? -->
 
 ## What does this PR change?
-<!-- 1-3 sentences. What, not why — the "why" belongs above. -->
+<!-- 1-3 sentences. What, not why — the why belongs above. -->
 
-## Is this change appropriate for the core library?
-<!-- Superpowers core contains general-purpose skills and infrastructure
-     that benefit all users. Ask yourself:
+## Is this change appropriate for godot-superpowers core?
+<!-- This fork contains:
+     - Godot-specific skills that benefit any Godot developer regardless of project
+     - Updates to upstream skills to work better in Godot workflows (e.g. TDD → GUT)
+     - Fork infrastructure (README, CLAUDE.md, plugin.json)
 
-     - Would this be useful to someone working on a completely different
-       kind of project than yours?
-     - Is this project-specific, team-specific, or tool-specific?
-     - Does this integrate or promote a third-party service?
+     It does NOT contain:
+     - Skills for specific Godot addons, frameworks, or third-party tools (those belong as separate plugins)
+     - Project-specific or workflow-specific configuration
+     - General (non-Godot) skill changes (submit those upstream to obra/superpowers)
 
-     If your change is a new skill for a specific domain, workflow tool,
-     or third-party integration, it belongs in its own plugin — not here.
-     See the plugin development docs for how to publish it separately. -->
+     Does your change fit the first list? If not, where does it belong? -->
 
 ## What alternatives did you consider?
-<!-- What other approaches did you try or evaluate before landing on this
-     one? Why were they worse? If you didn't consider alternatives, say so
-     — but know that's a red flag. -->
+<!-- What other approaches did you try or evaluate before landing on this one?
+     Why were they worse? If you didn't consider alternatives, say so. -->
 
 ## Does this PR contain multiple unrelated changes?
-<!-- If yes: stop. Split it into separate PRs. Bundled PRs will be closed.
+<!-- If yes: stop. Split it into separate PRs.
      If you believe the changes are related, explain the dependency. -->
 
 ## Existing PRs
 - [ ] I have reviewed all open AND closed PRs for duplicates or prior art
 - Related PRs: <!-- #number, #number, or "none found" -->
 
-<!-- If a related closed PR exists, explain what's different about your
-     approach and why it should succeed where the other didn't. -->
-
 ## Environment tested
 
-| Harness (e.g. Claude Code, Cursor) | Harness version | Model | Model version/ID |
-|-------------------------------------|-----------------|-------|------------------|
-|                                     |                 |       |                  |
+| Harness | Harness version | Model | Model version/ID |
+|---------|-----------------|-------|------------------|
+|         |                 |       |                  |
 
 ## Evaluation
-- What was the initial prompt you (or your human partner) used to start
-  the session that led to this change?
-- How many eval sessions did you run AFTER making the change?
+- What was the initial prompt that surfaced this problem?
+- How many sessions did you run AFTER making the change?
 - How did outcomes change compared to before the change?
 
 <!-- "It works" is not evaluation. Describe the before/after difference
@@ -61,27 +57,15 @@ of human involvement will be closed without review.
 
 ## Rigor
 
-- [ ] If this is a skills change: I used `superpowers:writing-skills` and
-      completed adversarial pressure testing (paste results below)
-- [ ] This change was tested adversarially, not just on the happy path
-- [ ] I did not modify carefully-tuned content (Red Flags table,
-      rationalizations, "human partner" language) without extensive evals
-      showing the change is an improvement
-
-<!-- If you changed wording in skills that shape agent behavior, show your
-     eval methodology and results. These are not prose — they are code. -->
+- [ ] If this modifies a skill: I used `superpowers:writing-skills` and completed adversarial pressure testing (paste results below)
+- [ ] All GDScript examples are typed (type annotations on variables, params, and return types)
+- [ ] Signal examples use Godot 4 syntax
+- [ ] Test runner examples use GUT or gdUnit4 (not npm/TypeScript)
+- [ ] I did not modify Red Flags tables, iron laws, or rationalization lists without eval evidence
 
 ## Human review
 - [ ] A human has reviewed the COMPLETE proposed diff before submission
 
 <!--
 STOP. If the checkbox above is not checked, do not submit this PR.
-
-PRs will be closed without review if they:
-- Show no evidence of human involvement
-- Contain multiple unrelated changes
-- Promote or integrate third-party services or tools
-- Submit project-specific or personal configuration as core changes
-- Leave required sections blank or use placeholder text
-- Modify behavior-shaping content without eval evidence
 -->
