@@ -1,13 +1,13 @@
 {
-  "name": "superpowers",
-  "description": "Core skills library for Claude Code: TDD, debugging, collaboration patterns, and proven techniques",
+  "name": "godot-superpowers",
+  "description": "Superpowers fork for Godot development — scene architecture, GDScript idioms, and Godot-native TDD workflow added to the core skills library",
   "version": "5.0.7",
   "author": {
-    "name": "Jesse Vincent",
-    "email": "jesse@fsck.com"
+    "name": "Lance Newman",
+    "email": "lancenewman@users.noreply.github.com"
   },
-  "homepage": "https://github.com/obra/superpowers",
-  "repository": "https://github.com/obra/superpowers",
+  "homepage": "https://github.com/lancenewman/godot-superpowers",
+  "repository": "https://github.com/lancenewman/godot-superpowers",
   "license": "MIT",
   "keywords": [
     "skills",
@@ -15,6 +15,9 @@
     "debugging",
     "collaboration",
     "best-practices",
-    "workflows"
+    "workflows",
+    "godot",
+    "gdscript",
+    "game-development"
   ]
 }
