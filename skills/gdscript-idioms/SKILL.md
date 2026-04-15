@@ -140,11 +140,10 @@ var sword: Dictionary = {
     "damage": 15,
     "icon": preload("res://assets/sword.png")
 }
-
-# Good — custom Resource: typed, Inspector-editable, version-controllable
 ```
 
 ```gdscript
+# Good — custom Resource: typed, Inspector-editable, version-controllable
 # item_data.gd
 class_name ItemData extends Resource
 
