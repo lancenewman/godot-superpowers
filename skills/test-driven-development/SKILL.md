@@ -115,7 +115,7 @@ Vague name, tests mock not code
 **MANDATORY. Never skip.**
 
 ```bash
-npm test path/to/test.test.ts
+godot --headless -s res://addons/gut/gut_cmdln.gd -gtest=res://tests/path/to/test_feature.gd
 ```
 
 Confirm:
@@ -170,7 +170,7 @@ Don't add features, refactor other code, or "improve" beyond the test.
 **MANDATORY.**
 
 ```bash
-npm test path/to/test.test.ts
+godot --headless -s res://addons/gut/gut_cmdln.gd -gtest=res://tests/path/to/test_feature.gd
 ```
 
 Confirm:
@@ -301,8 +301,10 @@ test('rejects empty email', async () => {
 
 **Verify RED**
 ```bash
-$ npm test
-FAIL: expected 'Email required', got undefined
+$ godot --headless -s res://addons/gut/gut_cmdln.gd
+FAIL: test_rejects_empty_email
+  Expected: 'Email required'
+  Got: null
 ```
 
 **GREEN**
@@ -317,8 +319,8 @@ function submitForm(data: FormData) {
 
 **Verify GREEN**
 ```bash
-$ npm test
-PASS
+$ godot --headless -s res://addons/gut/gut_cmdln.gd
+PASS: test_rejects_empty_email
 ```
 
 **REFACTOR**

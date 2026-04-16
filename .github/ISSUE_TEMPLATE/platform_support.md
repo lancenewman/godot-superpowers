@@ -1,13 +1,8 @@
 ---
 name: IDE / Platform Support Request
-about: Request support for a new IDE, editor, or AI coding tool
+about: Request support for a new IDE, editor, or AI coding tool with godot-superpowers
 labels: platform-support
 ---
-
-<!--
-BEFORE FILING: Search existing issues — your IDE may already be
-requested or discussed.
--->
 
 - [ ] I searched existing issues for this IDE/platform
 
@@ -19,5 +14,9 @@ requested or discussed.
      integrations typically work with this tool. -->
 
 ## Have you tried manual installation?
-<!-- Many tools work with Superpowers through manual setup even without
+<!-- Many tools work with godot-superpowers through manual setup even without
      official support. Did you try? What happened? -->
+
+## Godot workflow context
+<!-- How do you use this IDE with Godot? Any Godot-specific concerns
+     (e.g., GDScript language server, scene editing integration)? -->

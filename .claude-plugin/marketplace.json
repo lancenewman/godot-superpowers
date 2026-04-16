@@ -1,19 +1,19 @@
 {
-  "name": "superpowers-dev",
-  "description": "Development marketplace for Superpowers core skills library",
+  "name": "godot-superpowers-dev",
+  "description": "Development marketplace for Godot Superpowers fork skills library",
   "owner": {
-    "name": "Jesse Vincent",
-    "email": "jesse@fsck.com"
+    "name": "Lance Newman",
+    "email": "lancenewman@users.noreply.github.com"
   },
   "plugins": [
     {
-      "name": "superpowers",
-      "description": "Core skills library for Claude Code: TDD, debugging, collaboration patterns, and proven techniques",
+      "name": "godot-superpowers",
+      "description": "Superpowers fork for Godot development — scene architecture, GDScript idioms, and Godot-native TDD workflow added to the core skills library",
       "version": "5.0.7",
       "source": "./",
       "author": {
-        "name": "Jesse Vincent",
-        "email": "jesse@fsck.com"
+        "name": "Lance Newman",
+        "email": "lancenewman@users.noreply.github.com"
       }
     }
   ]
